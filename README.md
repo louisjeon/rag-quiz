@@ -4,7 +4,13 @@ This project allows students to make quiz sets from their lecture materials incl
 
 ## Tech Stack
 
-![TS](https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg)Typescript, ![Tailwind CSS](https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png)Tailwind CSS,![LangChain](https://upload.wikimedia.org/wikipedia/commons/6/60/LangChain_Logo.svg) Langchain, ![React](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)React, ![RQ](https://vectorseek.com/wp-content/uploads/2023/09/React-Query-Logo-Vector.svg-.png)React Query, ![Zs](https://i.namu.wiki/i/zfaeIwFaDfT8zysRkfC4SSSrpWNWXAQOS3Vb5G_JIraYetUBcKX39jeSOg2IuwrFTME65n0LQDbqUB93DOeCaSBZzM7WJrkev12QU8sbQ4acfQiilMqv1NMbOYYPfUStAeIG9RKmwYKnvNFX1C8bOQ.webp)Zustand, ![sp](https://i.namu.wiki/i/xix1V8ND5sir17cX6HWz4tZSk8Glvz8h9sGnTGLnG1J2tQUyU7P2WnYJc_mxxFHrglNYzxspZhPhvBGIX8qLr1xO4u4baXZqwfhiQiIwfkiKAqAZXJ6AXrd4sEzEZbsPcJzhXaoD9seTsr8X4BaxAA.svg)Supabase (To be added)
+![TS](https://velog.velcdn.com/images/kwontae1313/post/2b6e1f63-0d35-49a7-ab5b-9dcddf04172b/image.png){: width="50%" height="50%"}
+![Tailwind CSS](https://getlogovector.com/wp-content/uploads/2021/01/tailwind-css-logo-vector.png){: width="50%" height="50%"}
+![LangChain](https://upload.wikimedia.org/wikipedia/commons/6/60/LangChain_Logo.svg){: width="50%" height="50%"}
+![React](https://cdn.inflearn.com/wp-content/uploads/react.png?w=736){: width="50%" height="50%"}
+![RQ](https://vectorseek.com/wp-content/uploads/2023/09/React-Query-Logo-Vector.svg-.png){: width="50%" height="50%"}
+![Zs](https://velog.velcdn.com/images/jungmin211/post/d34e3fab-2d9f-4ee0-a99f-478b1e88025f/image.png){: width="50%" height="50%"}
+![sp](https://i.namu.wiki/i/xix1V8ND5sir17cX6HWz4tZSk8Glvz8h9sGnTGLnG1J2tQUyU7P2WnYJc_mxxFHrglNYzxspZhPhvBGIX8qLr1xO4u4baXZqwfhiQiIwfkiKAqAZXJ6AXrd4sEzEZbsPcJzhXaoD9seTsr8X4BaxAA.svg){: width="50%" height="50%"}
 
 ## Version Updates
 
