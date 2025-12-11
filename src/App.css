@@ -1,35 +1,217 @@
-.App {
-	text-align: center;
-	background-color: #282c34;
+.page {
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 56px 20px 48px;
+}
+
+.hero {
+	text-align: center;
+	display: grid;
+	gap: 10px;
+	margin-bottom: 28px;
+}
+
+.badge {
+	display: inline-flex;
+	align-items: center;
 	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+	gap: 6px;
+	padding: 6px 10px;
+	border-radius: 999px;
+	background: rgba(99, 102, 241, 0.16);
+	color: #c7cbff;
+	font-weight: 600;
+	font-size: 13px;
+	width: fit-content;
+	margin: 0 auto;
 }
 
-.App-logo {
-	height: 40vmin;
-	pointer-events: none;
+.title {
+	font-size: 32px;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-	.App-logo {
-		animation: App-logo-spin infinite 20s linear;
-	}
+.subtitle {
+	margin: 0;
+	color: #b7c2d6;
+	font-size: 16px;
 }
 
-.App-link {
-	color: #61dafb;
+.panel {
+	width: min(960px, 100%);
+	background: rgba(255, 255, 255, 0.04);
+	border: 1px solid rgba(255, 255, 255, 0.06);
+	box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35),
+		0 0 0 1px rgba(255, 255, 255, 0.02);
+	border-radius: 18px;
+	padding: 24px;
+	backdrop-filter: blur(12px);
 }
 
-@keyframes App-logo-spin {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+.stack {
+	display: grid;
+	gap: 14px;
+}
+
+.file-picker {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding: 14px 16px;
+	border: 1px dashed rgba(255, 255, 255, 0.18);
+	border-radius: 14px;
+	cursor: pointer;
+	background: rgba(255, 255, 255, 0.04);
+	color: #e7edf5;
+	font-weight: 600;
+	transition: border-color 0.2s ease, transform 0.15s ease,
+		box-shadow 0.2s ease;
+}
+
+.file-picker:hover {
+	border-color: rgba(99, 102, 241, 0.5);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+	transform: translateY(-1px);
+}
+
+.file-picker input {
+	display: none;
+}
+
+.hint {
+	color: #9eb3d3;
+	font-size: 13px;
+}
+
+.status {
+	padding: 12px 14px;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.07);
+	background: rgba(255, 255, 255, 0.04);
+	color: #d9e1ed;
+}
+
+.status.error {
+	border-color: rgba(239, 68, 68, 0.5);
+	background: rgba(239, 68, 68, 0.08);
+	color: #fca5a5;
+}
+
+.quiz-grid {
+	display: grid;
+	gap: 12px;
+}
+
+.quiz-card {
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	border-radius: 14px;
+	padding: 14px 16px;
+	background: rgba(255, 255, 255, 0.04);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+}
+
+.quiz-header {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.pill {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 4px 10px;
+	border-radius: 999px;
+	font-size: 12px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.pill.easy {
+	background: rgba(34, 197, 94, 0.12);
+	color: #bbf7d0;
+}
+
+.pill.medium {
+	background: rgba(234, 179, 8, 0.12);
+	color: #fde68a;
+}
+
+.pill.hard {
+	background: rgba(239, 68, 68, 0.12);
+	color: #fecdd3;
+}
+
+.question {
+	font-weight: 700;
+	font-size: 16px;
+	margin: 0;
+	color: #e7edf5;
+}
+
+.options {
+	margin: 0 0 8px 18px;
+	color: #d4dceb;
+}
+
+.options-list {
+	display: grid;
+	gap: 10px;
+	margin: 12px 0;
+}
+
+.option-btn {
+	width: 100%;
+	text-align: left;
+	padding: 12px 14px;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.08);
+	background: rgba(255, 255, 255, 0.04);
+	color: #e7edf5;
+	font-weight: 600;
+	cursor: pointer;
+	transition: border-color 0.2s ease, transform 0.1s ease,
+		box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.option-btn:hover {
+	border-color: rgba(99, 102, 241, 0.6);
+	transform: translateY(-1px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.option-btn.selected {
+	border-color: rgba(99, 102, 241, 0.7);
+	background: rgba(99, 102, 241, 0.12);
+}
+
+.option-btn.correct {
+	border-color: rgba(34, 197, 94, 0.7);
+	background: rgba(34, 197, 94, 0.14);
+	color: #d9f99d;
+}
+
+.option-btn.wrong {
+	border-color: rgba(239, 68, 68, 0.6);
+	background: rgba(239, 68, 68, 0.12);
+	color: #fecdd3;
+}
+
+.meta {
+	color: #9eb3d3;
+	font-size: 14px;
+	margin-top: 4px;
+}
+
+.footer {
+	margin-top: 32px;
+	color: #9eb3d3;
+	font-size: 13px;
+	text-align: center;
 }
