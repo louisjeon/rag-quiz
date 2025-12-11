@@ -1,9 +1,13 @@
 import "./App.css";
 import { FileInputForm } from "./components/FileInputForm";
+import { AuthBar } from "./components/AuthBar";
 
 function App() {
 	return (
 		<div className="page">
+			<div className="topbar">
+				<AuthBar />
+			</div>
 			<header className="hero">
 				<div className="badge">AI Quiz Generator</div>
 				<h1 className="title">강의자료로 퀴즈 만들기</h1>
